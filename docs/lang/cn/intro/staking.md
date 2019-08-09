@@ -1,5 +1,3 @@
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'],['\\(','\\)']]} }); </script> <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-
 # 通证模型
 
 ## 通证作用
@@ -16,9 +14,8 @@ Alief网络的原生通证叫做ALF，有三个作用：
 
 ALF减半周期为两年，在第一个减半周期将释放50%的代币，在第二个减半周期将释放75%的代币，而在第七次减半时将释放约99.2%的代币。如下图所示：
 
-```
-Alief减半模型图
-```
+![](https://raw.githubusercontent.com/AliefChain/wiki/0.1/docs/lang/cn/intro/picture/1.png)
+
 ## 通证分配
 Alief网络通证采用通缩机制，共有。。。。1亿。。枚ALF。其中：
 
@@ -45,18 +42,8 @@ Alief网络支持多资产抵押挖矿，抵押的资产类型、资产量都是
 每一类资产在Alief网络中都占有一定权重，各资产权重之和为1，且每一种资产的抵押价值相对ALF来说都有各自的价值因子β。
 
 假设网络中有ALF、BTC、LTC三种质押资产，则：
-$$归一化抵押价值=W_{BTC}*V_{BTC} +W_{ALF}*V_{ALF}+W_{LTC}*V_{LTC}
-=W_{BTC}*M_{BTC}*\beta_{BTC} +W_{ALF}*M_{ALF}*\beta_{ALF}+W_{LTC}*M_{LTC}*\beta_{LTC}$$
-$$W_{BTC} +W_{ALF}+W_{LTC}=1$$
-其中：
 
-$W:权重，假设当前权重W_{BTC}=0.3，W_{ALF}=0.6，W_{LTC}=0.1$
-
-$V:价值$
-
-$M:代币质押数量$
-
-$\beta:代币价值因子，假设\beta_{BTC}：\beta_{ALF}=1000, \beta_{BTC}：\beta_{ALF}=300$
+![](https://raw.githubusercontent.com/AliefChain/wiki/0.1/docs/lang/cn/intro/picture/2.png)
 
 ---
 
@@ -66,27 +53,10 @@ ALF所占权重会依据ALF目标质押率及当前网络中ALF的实际质押�
 
 假设网络中有ALF、BTC、LTC三种质押资产，则：
 
-$$W_{ALF}^t=W_{ALF}^{t-1}+\Delta W$$
-$$\Delta W=W_{ALF}^{t-1}(\frac{\theta-\frac{S_{ALF}^{t}}{F_{ALF}^{t}}}{\theta})$$
-$$W_{BTC}^t=W_{BTC}^{t-1}-\frac{1}{N-1}\Delta W$$
-$$W_{LTC}^t=W_{LTC}^{t-1}-\frac{1}{N-1}\Delta W$$
-其中：
-
-$W_{ALF}^t:t时刻ALF的出块权重$
-
-$W_{ALF}^{t-1}:t-1时刻ALF的出块权重$
-
-$\Delta W:ALF出块权重调节步长$
-
-$\theta:ALF的目标质押率，由社区投票决定$
-
-$\S_{ALF}^{t}:t时刻ALF的全网质押量$
-
-$F_{ALF}^{t}:t时刻ALF的全网流通数量$
-
-$N:网络支持质押代币的种类数$
+![](https://raw.githubusercontent.com/AliefChain/wiki/0.1/docs/lang/cn/intro/picture/3.png)
 
 ---
+
 ### 长期参数和短期参数
 * **长期参数**：长期参数指可以经过较长时间网络发展到一定阶段后进行修正的参数，比如各资产的价值因子$\beta$，ALF的目标质押率$\theta$。$\beta$可依据各代币的相对价值变动，或网络质押策略的变更进行不定期调节；$\theta$可依据网络发展状态，进行不定期修正。
 * **短期参数**：短期参数指系统自动进行调节修正的参数，比如各资产权重W，可依据网络中ALF的实际质押率进行动态调节，以便维持网络资产质押的稳定性。
@@ -94,22 +64,15 @@ $N:网络支持质押代币的种类数$
 ## 奖惩机制
 ### 参与者
 #### 验证人（``````如何成为验证人链接```）
-* **验证人的权益**：验证人通过参与网络共识，有以下收益：
+**验证人的权益**：验证人通过参与网络共识，有以下收益：
 
-	** **手续费**：Alief网络的各种交易都需要支付一定的手续费。手续费的种类及计费方式如下表：
+* **手续费**：Alief网络的各种交易都需要支付一定的手续费。手续费的种类及计费方式如下表：
 	
+![](https://raw.githubusercontent.com/AliefChain/wiki/0.1/docs/lang/cn/intro/picture/4.png)
 	
-	| 费用类型  | 费用标准  | 场景 |
-|:------------- |:---------------:| -------------:|
-| TransferFee      | 0.011ALF |      普通转账 |
-| CreationFee     | 0.01ALF        |           激活新账户 |
-| TransactionBaseFee |  0.01ALF        |           交易基础费用 |
-| TransactionByteFee |  0.01ALF        |            交易字节费用 |
-
-
-	** **抵押奖励**验证人参与网络共识，在每个分红周期（`````````见下述分红周期```）结束时，获取一定量的奖池奖励。奖池奖励由通证减半模型决定，而验证人获取的奖励可根据自身情况设定预留金额参数，从奖池奖励中抽取。
+* **抵押奖励**: 验证人参与网络共识，在每个分红周期（`````````见下述分红周期```）结束时，获取一定量的奖池奖励。奖池奖励由通证减半模型决定，而验证人获取的奖励可根据自身情况设定预留金额参数，从奖池奖励中抽取。
 	
-* **验证人的责任**：验证人可根据自身实际情况设置免罚阈值参数，在参与共识过程中，若不良行为次数在免罚阈值内，则可免除惩罚，否则会处罚所有抵押的ALF资产。
+**验证人的责任**：验证人可根据自身实际情况设置免罚阈值参数，在参与共识过程中，若不良行为次数在免罚阈值内，则可免除惩罚，否则会处罚所有抵押的ALF资产。
 	
 #### 提名人（``````如何成为提名人链接```）
 * **提名人的收益**：提名人通过抵押一定量的资产，并委托至信任的验证人，则可瓜分所委托验证人的奖池奖励。相应的，若其委托的验证人有不良行为，提名人也会得到相应惩罚。
