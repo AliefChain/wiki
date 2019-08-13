@@ -108,9 +108,9 @@ module.exports = {
             title: "Overview",
             collapsable: true,
             children: [
-              "/en/intro/",
-              "/en/intro/staking",
-              "/en/intro/bridge"
+              "/lang/cn/intro/",
+              "/lang/cn/intro/staking",
+              "/lang/cn/intro/bridge"
             ]
           },
         ]
