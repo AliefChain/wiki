@@ -58,9 +58,7 @@ module.exports = {
             children: [
               "/intro/",
               "/intro/staking",
-              "/intro/sdk-app-architecture",
-              "/intro/bridge",
-              "/intro/ocap"
+              "/intro/bridge"
             ]
           }
         ]
