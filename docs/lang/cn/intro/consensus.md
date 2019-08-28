@@ -1,12 +1,1 @@
----
-sidebar: auto
-sidebarDepth: 2
----
-
-# Consensus
-
-## Overview
-
-
-
-## Implementation
+# 共识

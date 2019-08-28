@@ -1,12 +1,1 @@
----
-sidebar: auto
-sidebarDepth: 2
----
-
-# Governance
-
-## Overview
-
-
-
-## Implementation
+# 治理

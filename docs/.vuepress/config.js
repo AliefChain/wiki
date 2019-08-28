@@ -52,15 +52,65 @@ module.exports = {
           }
         ],
         sidebar: [
-          {
-            title: "Overview",
-            collapsable: true,
-            children: [
-              "/intro/",
-              "/intro/staking",
-              "/intro/bridge"
-            ]
-          }
+            {
+                title: "Overview",
+                collapsable: true,
+                children: [
+                    "/intro/",
+                    "/intro/staking",
+                    "/intro/consensus",
+                    "/intro/governance",
+                    "/intro/roadmap",
+                    "/intro/bridge",
+                    "/intro/glossary"
+                ]
+            },
+            {
+                title: "Guide",
+                collapsable: true,
+                children: [
+                    "/guide/"
+                ]
+            },
+            {
+                title: "Deploy",
+                collapsable: true,
+                children: [
+                    "/deploy/",
+                    "/deploy/node",
+                    "/deploy/mainnet",
+                    "/deploy/testnet",
+                    "/deploy/wallet"
+                ]
+            },
+            {
+                title: "CLI",
+                collapsable: true,
+                children: [
+                    "/cli/",
+                ]
+            },
+            {
+                title: "API",
+                collapsable: true,
+                children: [
+                    "/api/",
+                ]
+            },
+            {
+                title: "SDK",
+                collapsable: true,
+                children: [
+                    "/sdk/",
+                ]
+            },
+            {
+                title: "FAQ",
+                collapsable: true,
+                children: [
+                    "/faq/",
+                ]
+            },
         ]
       },
       '/lang/cn/': {
@@ -80,16 +130,8 @@ module.exports = {
             link: 'http://www.alief.io',
           },
           {
-            text: '简介',
-            link: '/lang/zh/introduction/',
-          },
-          {
-            text: '配置',
-            link: '/lang/zh/config/'
-          },
-          {
-            text: 'Validators',
-            link: '/lang/zh/validators/'
+            text: '文档',
+            link: '/lang/cn/',
           },
           {
             text: 'Changelog',
@@ -104,15 +146,65 @@ module.exports = {
           },
         ],
         sidebar: [
-          {
-            title: "Overview",
-            collapsable: true,
-            children: [
-              "/lang/cn/intro/",
-              "/lang/cn/intro/staking",
-              "/lang/cn/intro/bridge"
-            ]
-          },
+            {
+                title: "简介",
+                collapsable: true,
+                children: [
+                    "/lang/cn/intro/",
+                    "/lang/cn/intro/staking",
+                    "/lang/cn/intro/consensus",
+                    "/lang/cn/intro/governance",
+                    "/lang/cn/intro/roadmap",
+                    "/lang/cn/intro/bridge",
+                    "/lang/cn/intro/glossary"
+                ]
+            },
+            {
+                title: "指南",
+                collapsable: true,
+                children: [
+                    "/lang/cn/guide/"
+                ]
+            },
+            {
+                title: "部署",
+                collapsable: true,
+                children: [
+                    "/lang/cn/deploy/",
+                    "/lang/cn/deploy/node",
+                    "/lang/cn/deploy/mainnet",
+                    "/lang/cn/deploy/testnet",
+                    "/lang/cn/deploy/wallet"
+                ]
+            },
+            {
+                title: "常用命令",
+                collapsable: true,
+                children: [
+                    "/lang/cn/cli/",
+                ]
+            },
+            {
+                title: "API",
+                collapsable: true,
+                children: [
+                    "/lang/cn/api/",
+                ]
+            },
+            {
+                title: "SDK",
+                collapsable: true,
+                children: [
+                    "/lang/cn/sdk/",
+                ]
+            },
+            {
+                title: "FAQ",
+                collapsable: true,
+                children: [
+                    "/lang/cn/faq/",
+                ]
+            },
         ]
       }
     }

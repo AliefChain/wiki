@@ -1,5 +1,7 @@
-# 手工构建
-## Linux and Mac
+# 节点搭建
+
+## 手工构建
+### Linux and Mac
 **安装系统工具**  
 
 * linux  
@@ -21,9 +23,11 @@
       
 **搭建本地节点**
   
-  下载alif工程
-
-然后编译工程
+下载alief工程
+```
+    git clone 
+```
+编译工程
 ```
 cargo build  --release
 ```
