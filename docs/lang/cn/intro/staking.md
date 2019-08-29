@@ -67,6 +67,14 @@ ALF所占权重会依据ALF目标质押率及当前网络中ALF的实际质押�
 
 假设网络中有ALF、BTC、LTC三种质押资产，则：
 
+***<center>W<sup>t</sup><sub>ALF</sub> = W<sub>ALF</sub> + ΔW</center>***
+
+***<center>ΔW = W<sub>ALF</sub> ( 1 - S<sup>t</sup><sub>ALF</sub> / F<sup>t</sup><sub>ALF</sub> / θ )</center>***
+
+***<center>W<sup>t</sup><sub>BTC</sub> = W<sub>BTC</sub> - ΔW / ( N - 1 )</center>***
+
+***<center>W<sup>t</sup><sub>LTC</sub> = W<sub>LTC</sub> - ΔW / ( N - 1 )</center>***
+
 ![](https://raw.githubusercontent.com/AliefChain/wiki/0.1/docs/lang/cn/intro/picture/3.png)
 
 ---
