@@ -43,11 +43,11 @@ Alief网络支持多资产抵押挖矿，抵押的资产类型、资产量都是
 
 假设网络中有ALF、BTC、LTC三种质押资产，则：
 
-***<center>归一化抵押价值 = W<sub>BTC</sub> * V<sub>BTC</sub> + W<sub>LTC</sub> * V<sub>LTC</sub> + W<sub>ALF</sub> * V<sub>ALF</sub></center>***
+<center>$V=W_{BTC}*V_{BTC}+W_{LTC}*V_{LTC}+W_{ALF}*V_{ALF}$</center>
 
-***<center>= W<sub>BTC</sub> * M<sub>BTC</sub> * β<sub>BTC</sub> + W<sub>LTC</sub> * M<sub>LTC</sub> * β<sub>BTC</sub> + W<sub>ALF</sub> * M<sub>ALF</sub> * β<sub>BTC</sub></center>***
+<center>$=W_{BTC}*M_{BTC}*β_{BTC}+W_{LTC}*M_{LTC}*β_{LTC}+W_{ALF}*M_{ALF}*β_{ALF}$</center>
 
-***<center>W<sub>BTC</sub> + W<sub>LTC</sub> + W<sub>ALF</sub> = 1</center>***
+***<center>$1=W_{BTC}+W_{LTC}+W_{ALF}$</center>***
 
 其中：
 
@@ -67,15 +67,29 @@ ALF所占权重会依据ALF目标质押率及当前网络中ALF的实际质押�
 
 假设网络中有ALF、BTC、LTC三种质押资产，则：
 
-***<center>W<sup>t</sup><sub>ALF</sub> = W<sub>ALF</sub> + ΔW</center>***
+***<center>$W_{ALF}^t=W_{ALF}+ΔW$</center>***
 
-***<center>ΔW = W<sub>ALF</sub> ( 1 - S<sup>t</sup><sub>ALF</sub> / F<sup>t</sup><sub>ALF</sub> / θ )</center>***
+***<center>$ΔW=W_{ALF}(\frac{θ-\frac{S_{ALF}^t}{F_{ALF}^t}}{θ})$</center>***
 
-***<center>W<sup>t</sup><sub>BTC</sub> = W<sub>BTC</sub> - ΔW / ( N - 1 )</center>***
+***<center>$W_{BTC}^t=W_{BTC}-\frac{ΔW}{N-1}$</center>***
 
-***<center>W<sup>t</sup><sub>LTC</sub> = W<sub>LTC</sub> - ΔW / ( N - 1 )</center>***
+***<center>$W_{LTC}^t=W_{LTC}-\frac{ΔW}{N-1}$</center>***
 
-![](https://raw.githubusercontent.com/AliefChain/wiki/0.1/docs/lang/cn/intro/picture/3.png)
+其中：
+
+$W_{ALF}^t$：t时刻ALF的出块权重
+
+$W_{ALF}$：初始时刻ALF的出块权重
+
+ΔW：ALF出块权重调解步长
+
+θ：ALF的目标质押率
+
+$S_{ALF}^t$：t时刻ALF全网质押量
+
+$F_{ALF}^t$：t时刻ALF全网流通量
+
+N：网络支持质押代币的种类数
 
 ---
 

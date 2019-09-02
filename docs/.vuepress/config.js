@@ -1,4 +1,12 @@
 module.exports = {
+    plugins: [
+        ['mathjax', {
+            target: 'svg',
+            macros: {
+                '*': '\\times',
+            },
+        }],
+    ],
   dest: '.vuepress/dist',
   locales: {
     '/': {
