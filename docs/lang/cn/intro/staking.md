@@ -43,9 +43,9 @@ Alief网络支持多资产抵押挖矿，抵押的资产类型、资产量都是
 
 假设网络中有ALF、BTC、LTC三种质押资产，则：
 
-<center>$V=W_{BTC}*V_{BTC}+W_{LTC}*V_{LTC}+W_{ALF}*V_{ALF}$</center>
+***<center>$V=W_{BTC}*V_{BTC}+W_{LTC}*V_{LTC}+W_{ALF}*V_{ALF}$</center>***
 
-<center>$=W_{BTC}*M_{BTC}*β_{BTC}+W_{LTC}*M_{LTC}*β_{LTC}+W_{ALF}*M_{ALF}*β_{ALF}$</center>
+***<center>$=W_{BTC}*M_{BTC}*β_{BTC}+W_{LTC}*M_{LTC}*β_{LTC}+W_{ALF}*M_{ALF}*β_{ALF}$</center>***
 
 ***<center>$1=W_{BTC}+W_{LTC}+W_{ALF}$</center>***
 
